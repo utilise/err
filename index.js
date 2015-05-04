@@ -1,5 +1,7 @@
-module.exports = function log(prefix){
+module.exports = function err(prefix){
   return function(d){
-    return console.error.bind(console, ''.red ? prefix.red : prefix).apply(console, arguments), d
+    var args = [].slice.call(arguments, 0)
+    args.unshift(''.red ? prefix.red : prefix)
+    return console.log.apply(console, args), d
   }
 }
