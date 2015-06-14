@@ -1,7 +1,11 @@
+var owner = require('owner')
+  , to = require('to')
+
 module.exports = function err(prefix){
   return function(d){
-    var args = [].slice.call(arguments, 0)
-    args.unshift(''.red ? prefix.red : prefix)
+    if (!owner.console) return d;
+    var args = to.arr(arguments)
+    args.unshift(prefix.red ? prefix.red : prefix)
     return console.error.apply(console, args), d
   }
 }
