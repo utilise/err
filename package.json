@@ -1,5 +1,5 @@
 {
-  "name": "err",
+  "name": "utilise.err",
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,14 +10,14 @@
   "license": "pemrouz.mit-license.org",
   "devDependencies": {
     "chai": "^2.3.0",
-    "client": "git+https://github.com/utilise/client.git",
+    "utilise.client": "*",
     "coveralls": "^2.11.2",
     "istanbul": "^0.3.13",
     "mocha": "^2.2.4",
     "mocha-lcov-reporter": "0.0.2"
   },
   "dependencies": {
-    "owner": "git+https://github.com/utilise/owner.git",
-    "to": "git+https://github.com/utilise/to.git"
+    "utilise.owner": "*",
+    "utilise.to": "*"
   }
 }

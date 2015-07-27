@@ -1,8 +1,8 @@
 var expect = require('chai').expect
-  , client = require('client')
-  , owner = require('owner')
+  , client = require('utilise.client')
+  , owner = require('utilise.owner')
   , err = require('./')
-  , to = require('to')
+  , to = require('utilise.to')
 
 describe('err', function() {
   it('should error value untouched and return it', function() {
